@@ -1,0 +1,160 @@
+html, body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Sunflower", sans-serif;
+}
+
+#top {
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+	box-shadow: 0px -20px 30px 30px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0px;
+	/* z-index: 2; */
+}
+
+#unsw, #logo, #navigation {
+	padding: 8px;
+	position: absolute;
+	display: inline-block;
+	box-sizing: border-box;
+	top: 30px;
+	transform: translateY(-50%);
+}
+
+#unsw {
+	height: 60px;
+}
+
+#logo {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(60px - 12px);
+	height: calc(60px - 12px);
+	background-image: url("images/logo-black.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	image-rendering: crisp-edges;
+	cursor: pointer;
+	padding: 0px;
+}
+
+#logo:hover {
+	background-image: url("images/logo-red.png");
+}
+
+#navigation {
+	right: 0px;
+	font-size: 18px;
+}
+
+.navigation-link {
+	padding: 6px;
+}
+
+#join-link, .button {
+	background-color: #f00;
+	color: #fff;
+}
+
+#join-link {
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 4px;
+}
+
+#join-link:hover, .button:hover {
+	background-color: #c00;
+}
+
+.button {
+	padding: 12px;
+	display: inline-block;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.button-solid {
+	background-color: #f00;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #f00;
+}
+
+.link-red {
+	color: #f00;
+}
+
+.link-red:hover {
+	color: #c00;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-family: "Raleway", sans-serif;
+}
+
+.half {
+	width: 50%;
+}
+
+#main {
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.section {
+	position: relative;
+	text-align: center;
+}
+
+.section-content {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+}
+
+.shade {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+	opacity: 0.8;
+	position: absolute;
+}
+
+#section-top {
+	height: 500px;
+	color: white;
+	background-image: url("images/banner-0.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#logo-main {
+	height: 200px;
+}
+
+.section-skill {
+	width: 75%;
+	display: inline-block;
+}
