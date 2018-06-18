@@ -110,16 +110,32 @@ a:hover {
 	color: #c00;
 }
 
-h1 {
-	font-size: 40px;
-	font-weight: normal;
-	margin-top: 15px;
-	margin-bottom: 5px;
+h1, h2, h3 {
 	font-family: "Raleway", sans-serif;
+	font-weight: normal;
 }
 
-.half {
-	width: 50%;
+h1 {
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 35px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.narrow {
+	width: 600px;
+	display: inline-block;
 }
 
 #main {
@@ -132,6 +148,8 @@ h1 {
 .section {
 	position: relative;
 	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .section-content {
@@ -159,11 +177,34 @@ h1 {
 	background-position: center;
 }
 
+#section-top-content {
+	width: 700px;
+}
+
 #logo-main {
 	height: 200px;
 }
 
+#section-skills {
+	width: 800px;
+}
+
 .section-skill {
-	width: 75%;
+	margin-top: 15px;
+}
+
+.section-skill-content {
 	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 300px - 20px);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#skill-mechanical, #skill-electrical, #skill-media {
+	text-align: left;
+}
+
+#skill-cad, #skill-software {
+	text-align: right;
 }
