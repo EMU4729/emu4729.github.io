@@ -3,6 +3,8 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Sunflower", sans-serif;
+	font-size: 20px;
+	color: #404040;
 }
 
 #top {
@@ -67,7 +69,7 @@ html, body {
 }
 
 #join-link:hover, .button-solid:hover {
-	background-color: #c00;
+	background-color: #b00;
 }
 
 .button {
@@ -89,8 +91,8 @@ html, body {
 }
 
 .button-outline:hover {
-	color: #f00;
-	border-color: #f00;
+	color: #bbb;
+	border-color: #bbb;
 }
 
 a {
@@ -113,24 +115,28 @@ a:hover {
 h1, h2, h3 {
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
+	color: #000;
 }
 
 h1 {
 	font-size: 40px;
 	margin-top: 15px;
 	margin-bottom: 5px;
+	color: #fff;
 }
 
 h2 {
 	font-size: 35px;
 	margin-top: 15px;
 	margin-bottom: 5px;
+	color: #000;
 }
 
 h3 {
 	font-size: 25px;
 	margin-top: 0px;
 	margin-bottom: 5px;
+	color: #000;
 }
 
 .narrow {
@@ -149,15 +155,15 @@ h3 {
 	position: relative;
 	text-align: center;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%);\
+	font-size: 20px;
 }
 
-.section-content {
+.content-middle {
 	position: relative;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
-	font-size: 20px;
+	transform: translate(-50%, -50%);
 }
 
 .shade {
@@ -193,18 +199,49 @@ h3 {
 	margin-top: 15px;
 }
 
+.section-skill-left {
+	text-align: left;
+}
+
+.section-skill-right {
+	text-align: right;
+}
+
+.section-skill-left img {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.section-skill-right img {
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
 .section-skill-content {
 	display: inline-block;
 	vertical-align: top;
-	width: calc(100% - 300px - 20px);
+	width: calc(100% - 350px - 20px);
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
-#skill-mechanical, #skill-electrical, #skill-media {
-	text-align: left;
+.skill-image {
+	width: 350px;
+	height: 260px;
+	object-fit: cover;
+	object-position: center;
 }
 
-#skill-cad, #skill-software {
-	text-align: right;
+#footer {
+	padding: 5px;
+	border-top: 1px solid #b3b3b3;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.social-icon {
+	height: 1em;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 5px;
 }
