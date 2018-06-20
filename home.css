@@ -1,0 +1,142 @@
+@import "common.css";
+@import "page.css";
+
+.button {
+	padding: 12px;
+	display: inline-block;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.button-solid {
+	background-color: #f00;
+}
+
+.button-outline-white {
+	color: #fff;
+	border: 1px solid #fff;
+	transition: color 150ms, border-color 150ms;
+}
+
+.button-outline-white:hover {
+	color: #bbb;
+	border-color: #bbb;
+}
+
+.button-outline-black {
+	color: #000;
+	border: 1px solid #000;
+	transition: color 150ms, border-color 150ms;
+}
+
+.button-outline-black:hover {
+	color: #666;
+	border-color: #666;
+}
+
+#main {
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.section {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);\
+	font-size: 20px;
+}
+
+.section-heading {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 800px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.content-middle {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.shade {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+	opacity: 0.8;
+	position: absolute;
+}
+
+#top {
+	height: 500px;
+	color: white;
+	background-image: url("images/banner-0.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#top-content {
+	width: 700px;
+}
+
+#logo-main {
+	height: 200px;
+}
+
+#skills {
+	width: 800px;
+}
+
+.skill {
+	margin-top: 15px;
+}
+
+.skill-left {
+	text-align: left;
+}
+
+.skill-right {
+	text-align: right;
+}
+
+.skill-left img {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.skill-right img {
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.skill div {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 350px - 20px);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.skill-image {
+	width: 350px;
+	height: 260px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#who iframe {
+	pointer-events: none;
+}
+
+#map {
+	height: 450px;
+}

@@ -1,0 +1,27 @@
+html, body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Sunflower", sans-serif;
+	font-size: 20px;
+	overflow-x: hidden;
+}
+
+html {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+iframe {
+	width: 100%;
+	border: none;
+}
+
+#top-bar {
+	position: fixed;
+	z-index: 2;
+}
+
+#footer {
+	height: 45px;
+}
