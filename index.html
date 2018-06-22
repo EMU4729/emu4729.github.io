@@ -7,7 +7,7 @@
         <link rel="shortcut icon" type="image/png" href="static/favicon.png"/>
     </head>
     <body>
-		<script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=-33.9180103,151.2292029,15.94z&callback=initMap">
 			window.onload = function() {
 				document.documentElement.style.opacity = "1";
             }
@@ -21,7 +21,6 @@
             // The marker, positioned at Uluru
             var marker = new google.maps.Marker({position: uluru, map: map});
             }
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=-33.9180103,151.2292029,15.94z&callback=initMap"></script>
 		</script>
         <div id="main">
             <div id="top" class="section">
