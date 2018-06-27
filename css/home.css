@@ -37,29 +37,6 @@
 	border-color: #666;
 }
 
-#main {
-	width: 100%;
-	text-align: center;
-	box-sizing: border-box;
-}
-
-.section {
-	position: relative;
-	text-align: center;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 20px;
-}
-
-.section-heading {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	width: 800px;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
 .content-middle {
 	position: relative;
 	left: 50%;
