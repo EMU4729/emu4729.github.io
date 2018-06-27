@@ -47,7 +47,7 @@
 	position: relative;
 	text-align: center;
 	left: 50%;
-	transform: translateX(-50%);\
+	transform: translateX(-50%);
 	font-size: 20px;
 }
 
@@ -78,7 +78,7 @@
 #top {
 	height: 500px;
 	color: white;
-	background-image: url("../images/banner-0.JPG");
+	background-image: url("/images/banner-0.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -93,7 +93,7 @@
 }
 
 #skills {
-	width: 800px;
+	width: 1000px;
 }
 
 .skill {
