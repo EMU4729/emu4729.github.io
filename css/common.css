@@ -72,3 +72,27 @@ a:hover {
 #join-link:hover, .button-solid:hover {
 	background-color: #b00;
 }
+
+#main {
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 60px;
+}
+
+.section {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+}
+
+.section-heading {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 800px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
