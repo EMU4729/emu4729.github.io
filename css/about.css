@@ -1,2 +1,7 @@
 @import "common.css";
 @import "page.css";
+
+img {
+    margin-top: 15px;
+    height: 400px;
+}
