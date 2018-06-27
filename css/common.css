@@ -96,3 +96,13 @@ a:hover {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+::selection {
+	background-color: #f00;
+	color: #fff;
+}
+
+::-moz-selection {
+	background-color: #f00;
+	color: #fff;
+}
