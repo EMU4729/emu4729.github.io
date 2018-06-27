@@ -17,8 +17,5 @@ var body = dom.get("body");
 var main = dom.get("#main");
 
 main.style.marginTop = "60px";
-body.insertBefore(dom.iframe("top-bar", "top.html"), main);
-body.appendChild(dom.iframe("footer", "footer.html"), main);
-
-
-	  
+body.insertBefore(dom.iframe("top-bar", "common/top.html"), main);
+body.appendChild(dom.iframe("footer", "common/footer.html"), main);

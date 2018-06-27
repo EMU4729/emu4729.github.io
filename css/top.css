@@ -25,7 +25,7 @@
 	transform: translate(-50%, -50%);
 	width: calc(60px - 12px);
 	height: calc(60px - 12px);
-	background-image: url("images/logo-black.png");
+	background-image: url("../images/logo-black.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
