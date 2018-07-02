@@ -2,6 +2,9 @@ var dom = {
 	get: function(selector) {
 		return document.querySelector(selector);
 	},
+	getAll: function(selector) {
+		return document.querySelectorAll(selector);
+	},
 	create: function(tag) {
 		return document.createElement(tag);
 	},

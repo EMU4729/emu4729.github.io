@@ -1,28 +1,36 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var galleryTime = 5000;
+var galleryInterval = null;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var gallery = dom.get("#gallery");
+var images = Array.prototype.slice.call(dom.getAll(".gallery-image"));
+
+var current = 1;
+for (var i = 0; i < images.length; i++) {
+	images[i].onclick = function(event) {
+		current = images.indexOf(event.target);
+		clearInterval(galleryInterval);
+		galleryInterval = setInterval(slideGallery, galleryTime);
+		updateGallery();
+	}
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function slideGallery() {
+	current++;
+	if (current > images.length - 1) {
+		current = 0;
+	}
+	updateGallery();
+};
+galleryInterval = setInterval(slideGallery, galleryTime);
+updateGallery();
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function updateGallery() {
+	gallery.style.left = (-50 * current + 25) + "%";
+	for (var i = 0; i < images.length; i++) {
+		if (i != current) {
+			images[i].classList.add("gallery-dark");
+		} else {
+			images[i].classList.remove("gallery-dark");
+		}
+	}
 }
