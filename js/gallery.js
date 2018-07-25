@@ -4,7 +4,7 @@ var galleryInterval = null;
 var gallery = dom.get("#gallery");
 var images = Array.prototype.slice.call(dom.getAll(".gallery-image"));
 
-var current = 1;
+var current = Math.floor(images.length/2);
 for (var i = 0; i < images.length; i++) {
 	images[i].onclick = function(event) {
 		current = images.indexOf(event.target);
