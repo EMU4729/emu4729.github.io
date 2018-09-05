@@ -1,2 +1,11 @@
 @import "common.css";
 @import "page.css";
+
+.link-red {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.fab, .fas {
+	margin-right: 2px;
+}
