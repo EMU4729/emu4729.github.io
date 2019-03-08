@@ -21,3 +21,7 @@ var main = dom.get("#main");
 
 body.insertBefore(dom.iframe("top-bar", "/common/top.html"), main);
 body.appendChild(dom.iframe("footer", "/common/footer.html"), main);
+
+dom.get("#top-bar").onload = function() {
+	document.documentElement.style.opacity = "1";
+}
