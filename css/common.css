@@ -113,3 +113,39 @@ a:hover {
 	background-color: #f00;
 	color: #fff;
 }
+
+.button {
+	padding: 12px;
+	display: inline-block;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 8px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.button-solid {
+	background-color: #f00;
+}
+
+.button-outline-white {
+	color: #fff;
+	border: 1px solid #fff;
+	transition: color 150ms, border-color 150ms;
+}
+
+.button-outline-white:hover {
+	color: #bbb;
+	border-color: #bbb;
+}
+
+.button-outline-black {
+	color: #000;
+	border: 1px solid #000;
+	transition: color 150ms, border-color 150ms;
+}
+
+.button-outline-black:hover {
+	color: #666;
+	border-color: #666;
+}

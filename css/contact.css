@@ -2,12 +2,12 @@
 @import "page.css";
 
 .link-red {
-	padding-left: 3px;
-	padding-right: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 .fab, .fas {
-	margin-right: 2px;
+	/* margin-right: 2px; */
 }
 
 #twitter-widget-0 {
