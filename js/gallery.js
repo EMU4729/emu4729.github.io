@@ -20,7 +20,7 @@ function slideGallery() {
 		current = 0;
 	}
 	updateGallery();
-};
+}
 galleryInterval = setInterval(slideGallery, galleryTime);
 updateGallery();
 
