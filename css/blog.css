@@ -1,4 +1,4 @@
-button {
+.button {
     background-color: #ff0000; /* Green */
     border: solid;
     border-color: #ff0000;
@@ -11,7 +11,12 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
-button:hover {
+.button:hover {
     background-color: white;
     color: black;
+}
+
+.blog-image {
+	width: 350px;
+	height: 260px;
 }
