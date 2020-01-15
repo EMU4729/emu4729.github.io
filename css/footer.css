@@ -4,11 +4,15 @@ html, body {
 	overflow: hidden;
 }
 
-#footer {
+.footer {
 	padding: 5px;
 	border-top: 1px solid #b3b3b3;
 	text-align: center;
 	margin-top: 15px;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 .social-icon {
