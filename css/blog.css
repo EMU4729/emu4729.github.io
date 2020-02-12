@@ -20,3 +20,11 @@
 	width: 350px;
 	height: 260px;
 }
+
+.collapse-button {
+    cursor: pointer;
+}
+
+.collapse-section {
+    transition: max-height 1s;
+}
